@@ -1,0 +1,13 @@
+reset;
+
+model eco.mod;
+data eco.dat;
+
+
+# Solvers: baron, 
+option solver baron;
+option baron_options 'trace=baron.log';
+
+solve;
+
+display x > model3.txt;
